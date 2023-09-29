@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <nav>
+    <div class="main-nav container flex">
+        <a onclick="reload()" href="#" class="logo">
+            <img src="./assets/2759904.png" alt="logo">
+        </a>
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="odi world cup 2023" onclick="onNavItemClk('odi world cup 2023')">CWC'23</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavItemClk('finance')">Finance</li>
+                <li class="hover-link nav-item" id="Politics" onclick="onNavItemClk('Politics')">Politics</li>
+                <li class="hover-link nav-item" id="tech" onclick="onNavItemClk('Technology')">Technology</li>
+                <li class="hover-link nav-item" id="bollywood" onclick="onNavItemClk('bollywood')">Bollywood</li>
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g Science">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+    </div>
+   </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+           
+        </div>
+    </main>
+
+    <template id="card-template">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https:/via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">Divya Bhaskar 29/09/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nesciunt a voluptatibus explicabo deserunt ex iste voluptas facilis, omnis iure laudantium minus libero commodi dolorem et quos obcaecati tempora cumque?</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
